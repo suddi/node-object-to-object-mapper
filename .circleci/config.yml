@@ -10,7 +10,7 @@ jobs:
       - run: npm test
     branches:
       ignore:
-        - gh-pages
+        - /^gh-pages$/
 
   node10:
     docker:
@@ -21,7 +21,7 @@ jobs:
       - run: npm test
     branches:
       ignore:
-        - gh-pages
+        - /^gh-pages$/
 
   node12:
     docker:
@@ -33,7 +33,7 @@ jobs:
       - run: bash <(curl -s https://codecov.io/bash)
     branches:
       ignore:
-        - gh-pages
+        - /^gh-pages$/
 
 workflows:
   version: 2
