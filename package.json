@@ -36,10 +36,13 @@
     "lint": "eslint .",
     "publish-docs": "git subtree push --prefix docs origin gh-pages",
     "security-check": "npm audit --audit-level high || true",
-    "test": "npm run lint && npm run security-check && npm run coverage"
+    "test": "npm run lint && npm run security-check && npm run coverage",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "lodash": "^4.7.15"
+    "lodash": "^4.7.15",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -59,5 +62,6 @@
     "hooks": {
       "pre-push": "npm test"
     }
-  }
+  },
+  "snyk": true
 }
