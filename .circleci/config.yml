@@ -8,10 +8,6 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
-    filters:
-      branches:
-        ignore:
-          - /^gh-pages$/
 
   node10:
     docker:
@@ -20,10 +16,6 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
-    filters:
-      branches:
-        ignore:
-          - /^gh-pages$/
 
   node12:
     docker:
@@ -33,18 +25,26 @@ jobs:
       - run: npm install
       - run: npm test
       - run: bash <(curl -s https://codecov.io/bash)
-    filters:
-      branches:
-        ignore:
-          - /^gh-pages$/
 
 workflows:
   version: 2
   build_and_test:
     jobs:
-      - node8
-      - node10
-      - node12
+      - node8:
+          filters:
+            branches:
+              ignore:
+                - /^gh-pages$/
+      - node10:
+          filters:
+            branches:
+              ignore:
+                - /^gh-pages$/
+      - node12:
+          filters:
+            branches:
+              ignore:
+                - /^gh-pages$/
 
 notify:
   webhooks:
