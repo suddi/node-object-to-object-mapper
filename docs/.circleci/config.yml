@@ -12,7 +12,7 @@ workflows:
   version: 2
   test:
     jobs:
-      - docs:
+      - docs
 
 notify:
   webhooks:
