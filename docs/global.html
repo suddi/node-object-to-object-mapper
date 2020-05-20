@@ -87,7 +87,9 @@
 
     
 
-     
+    
+
+    
 
     
 
@@ -101,7 +103,9 @@
 
     
 
+    
     <h4 class="name" id="child"><span class="type-signature"></span>child<span class="signature">(input, object, index<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    
 
     
 
@@ -275,7 +279,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line102">line 102</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line104">line 104</a>
     </li></ul></dd>
     
 
@@ -285,6 +289,8 @@
 
     
 </dl>
+
+
 
 
 
@@ -322,6 +328,8 @@
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>child(4) // =>
@@ -346,7 +354,9 @@ child([4, 3, 4, 3], {}, -2) // => 4</code></pre>
 
     
 
+    
     <h4 class="name" id="compact"><span class="type-signature"></span>compact<span class="signature">(input)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -446,7 +456,7 @@ child([4, 3, 4, 3], {}, -2) // => 4</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line125">line 125</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line127">line 127</a>
     </li></ul></dd>
     
 
@@ -456,6 +466,8 @@ child([4, 3, 4, 3], {}, -2) // => 4</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -493,6 +505,8 @@ child([4, 3, 4, 3], {}, -2) // => 4</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>compact(4) // => []
@@ -515,7 +529,9 @@ compact([false, 0, null, , '', NaN, 1]) // => [1]</code></pre>
 
     
 
+    
     <h4 class="name" id="concat"><span class="type-signature"></span>concat<span class="signature">(input, object, value<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -689,7 +705,7 @@ compact([false, 0, null, , '', NaN, 1]) // => [1]</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line154">line 154</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line156">line 156</a>
     </li></ul></dd>
     
 
@@ -699,6 +715,8 @@ compact([false, 0, null, , '', NaN, 1]) // => [1]</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -736,6 +754,8 @@ compact([false, 0, null, , '', NaN, 1]) // => [1]</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>concat(4) // => [4]
@@ -762,7 +782,220 @@ concat([1], {}, {answer: 42}) // => [1, {answer: 42}]</code></pre>
 
     
 
+    
+    <h4 class="name" id="filter"><span class="type-signature"></span>filter<span class="signature">(input, object, func)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Loop through elements of an Array and filter out values
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>input</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">current value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">input object into mapper</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">function to execute on each element</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line307">line 307</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Array with elements filtered out
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>filter([3, -4, -5], {}, function (a) { return a > 0; }) // => [3]
+filter('hello', {}, function (a) { return a === 'l'; }) // => ['l', 'l']</code></pre>
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="find"><span class="type-signature"></span>find<span class="signature">(input, object, match)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
 
     
 
@@ -908,7 +1141,7 @@ concat([1], {}, {answer: 42}) // => [1, {answer: 42}]</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line259">line 259</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line261">line 261</a>
     </li></ul></dd>
     
 
@@ -918,6 +1151,8 @@ concat([1], {}, {answer: 42}) // => [1, {answer: 42}]</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -955,6 +1190,8 @@ concat([1], {}, {answer: 42}) // => [1, {answer: 42}]</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>find([{a: 3}, {a: 4}, {b: 5}], {}, 'a') // => {a: 3}
@@ -968,7 +1205,9 @@ find([{a: 3}, {a: 4}, {b: 5}], {}, {b: 2}) // =></code></pre>
 
     
 
+    
     <h4 class="name" id="findWhere"><span class="type-signature"></span>findWhere<span class="signature">(input, object, match)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -1114,7 +1353,7 @@ find([{a: 3}, {a: 4}, {b: 5}], {}, {b: 2}) // =></code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line275">line 275</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line277">line 277</a>
     </li></ul></dd>
     
 
@@ -1124,6 +1363,8 @@ find([{a: 3}, {a: 4}, {b: 5}], {}, {b: 2}) // =></code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -1161,6 +1402,8 @@ find([{a: 3}, {a: 4}, {b: 5}], {}, {b: 2}) // =></code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>findWhere([{a: 3}, {a: 4}, {b: 5}], {}, 'a') // => [{a: 3}, {a: 4}]
@@ -1174,7 +1417,9 @@ findWhere([{a: 3}, {a: 4}, {b: 5}], {}, {a: 1}) // => []</code></pre>
 
     
 
+    
     <h4 class="name" id="flatten"><span class="type-signature"></span>flatten<span class="signature">(input, object, flattenDeep<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -1348,7 +1593,7 @@ findWhere([{a: 3}, {a: 4}, {b: 5}], {}, {a: 1}) // => []</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line27">line 27</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line29">line 29</a>
     </li></ul></dd>
     
 
@@ -1358,6 +1603,8 @@ findWhere([{a: 3}, {a: 4}, {b: 5}], {}, {a: 1}) // => []</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -1395,6 +1642,8 @@ findWhere([{a: 3}, {a: 4}, {b: 5}], {}, {a: 1}) // => []</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>flatten(4) // => []
@@ -1418,7 +1667,9 @@ flatten([[3], [[4], 5], [[[[[6]]]]]], {}, true) // => [3, 4, 5, 6]</code></pre>
 
     
 
+    
     <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(input, object, path, defaultValue<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    
 
     
 
@@ -1623,7 +1874,7 @@ flatten([[3], [[4], 5], [[[[[6]]]]]], {}, true) // => [3, 4, 5, 6]</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="value.js.html">value.js</a>, <a href="value.js.html#line18">line 18</a>
+        <a href="value.js.html">value.js</a>, <a href="value.js.html#line20">line 20</a>
     </li></ul></dd>
     
 
@@ -1633,6 +1884,8 @@ flatten([[3], [[4], 5], [[[[[6]]]]]], {}, true) // => [3, 4, 5, 6]</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -1670,6 +1923,8 @@ flatten([[3], [[4], 5], [[[[[6]]]]]], {}, true) // => [3, 4, 5, 6]</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>get(null, {a: {b: {c: {d: [0, 2]}}}}, 'a.b.c.d.1') // => 2
@@ -1683,7 +1938,9 @@ get(null, {a: {b: {c: {d: [0, 2]}}}}, 'a.b.c.d.e.3', 42) // => 42</code></pre>
 
     
 
+    
     <h4 class="name" id="join"><span class="type-signature"></span>join<span class="signature">(input, object, joinToken<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
 
     
 
@@ -1857,7 +2114,7 @@ get(null, {a: {b: {c: {d: [0, 2]}}}}, 'a.b.c.d.e.3', 42) // => 42</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line179">line 179</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line181">line 181</a>
     </li></ul></dd>
     
 
@@ -1867,6 +2124,8 @@ get(null, {a: {b: {c: {d: [0, 2]}}}}, 'a.b.c.d.e.3', 42) // => 42</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -1904,6 +2163,8 @@ get(null, {a: {b: {c: {d: [0, 2]}}}}, 'a.b.c.d.e.3', 42) // => 42</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>join(4) // => ''
@@ -1926,7 +2187,9 @@ join([1, 4, 5], {}, '-') // => '1-4-5'</code></pre>
 
     
 
+    
     <h4 class="name" id="length"><span class="type-signature"></span>length<span class="signature">(input)</span><span class="type-signature"> &rarr; {int}</span></h4>
+    
 
     
 
@@ -2026,7 +2289,7 @@ join([1, 4, 5], {}, '-') // => '1-4-5'</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line243">line 243</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line245">line 245</a>
     </li></ul></dd>
     
 
@@ -2036,6 +2299,8 @@ join([1, 4, 5], {}, '-') // => '1-4-5'</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -2073,6 +2338,8 @@ join([1, 4, 5], {}, '-') // => '1-4-5'</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>length(4) // => 0
@@ -2094,7 +2361,9 @@ length(function () {}) // => 0</code></pre>
 
     
 
+    
     <h4 class="name" id="map"><span class="type-signature"></span>map<span class="signature">(input, object, func)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -2240,7 +2509,7 @@ length(function () {}) // => 0</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line290">line 290</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line292">line 292</a>
     </li></ul></dd>
     
 
@@ -2250,6 +2519,8 @@ length(function () {}) // => 0</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -2287,6 +2558,8 @@ length(function () {}) // => 0</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>map([3, 4, 5], {}, function (a) { return a + 2; }) // => [5, 6, 7]
@@ -2299,7 +2572,244 @@ map('hello', {}, function (a) { return a + '^'; }) // => ['h^', 'e^', 'l^', 'l^'
 
     
 
+    
+    <h4 class="name" id="reduce"><span class="type-signature"></span>reduce<span class="signature">(input, object, func, initial)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Loop through elements of an Array and reduce to a single value
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>input</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">current value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">input object into mapper</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">function to execute on each element</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>initial</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">initial value into reducer</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line324">line 324</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    reduced value
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>reduce([3, 4, 5], {}, function (p, v) { return p + v; }, 0) // => 12
+reduce([3, 4, 5], {}, function (p, v) { return p + v; }, 10) // => 22
+reduce('hello', {}, function (p, v) { return p + v; }, 'world ') // => 'world hello'</code></pre>
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="reverse"><span class="type-signature"></span>reverse<span class="signature">(input)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -2399,7 +2909,7 @@ map('hello', {}, function (a) { return a + '^'; }) // => ['h^', 'e^', 'l^', 'l^'
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line193">line 193</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line195">line 195</a>
     </li></ul></dd>
     
 
@@ -2409,6 +2919,8 @@ map('hello', {}, function (a) { return a + '^'; }) // => ['h^', 'e^', 'l^', 'l^'
 
     
 </dl>
+
+
 
 
 
@@ -2446,6 +2958,8 @@ map('hello', {}, function (a) { return a + '^'; }) // => ['h^', 'e^', 'l^', 'l^'
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>reverse([3, 4, 5]) // => [5, 4, 3]
@@ -2459,7 +2973,9 @@ reverse({answer: 42, me: 2}) // => {answer: 42, me: 2}</code></pre>
 
     
 
+    
     <h4 class="name" id="set"><span class="type-signature"></span>set<span class="signature">(input, object, setValue)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    
 
     
 
@@ -2605,7 +3121,7 @@ reverse({answer: 42, me: 2}) // => {answer: 42, me: 2}</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="value.js.html">value.js</a>, <a href="value.js.html#line33">line 33</a>
+        <a href="value.js.html">value.js</a>, <a href="value.js.html#line35">line 35</a>
     </li></ul></dd>
     
 
@@ -2615,6 +3131,8 @@ reverse({answer: 42, me: 2}) // => {answer: 42, me: 2}</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -2652,6 +3170,8 @@ reverse({answer: 42, me: 2}) // => {answer: 42, me: 2}</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>set(null, {}, 42) // => 42
@@ -2664,7 +3184,9 @@ set() // =></code></pre>
 
     
 
+    
     <h4 class="name" id="slice"><span class="type-signature"></span>slice<span class="signature">(input, object, start<span class="signature-attributes">opt</span>, end<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -2871,7 +3393,7 @@ set() // =></code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line221">line 221</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line223">line 223</a>
     </li></ul></dd>
     
 
@@ -2881,6 +3403,8 @@ set() // =></code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -2918,6 +3442,8 @@ set() // =></code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>slice(4) // => []
@@ -2942,7 +3468,231 @@ slice([1, 4, 5], {}, 0, -1) // => [1, 4]</code></pre>
 
     
 
+    
+    <h4 class="name" id="sort"><span class="type-signature"></span>sort<span class="signature">(input, object, func)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Loop through elements to sort them
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>input</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">current value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">input object into mapper</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">function to execute on each element</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line350">line 350</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    sorted Array
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>sort(4) // => 4
+sort(true) // => true
+sort(Infinity) // => Infinity
+sort(null) // =>
+sort() // =>
+sort(NaN) // => NaN
+sort(4.5) // => 4.5
+sort('hello') // => 'hello'
+sort([300, 4, 15]) // => [15, 300, 4]
+sort([300, 4, 15], {}, function (a, b) { return a - b; }) // => [4, 15, 300]
+sort([300, 4, 15], {}, function (a, b) { return b - a; }) // => [300, 15, 4]
+sort([300, 4, 15], {}, function (a, b) { return b - a; }) // => [300, 15, 4]
+sort(['h', 'e', 'l', 'l', 'o']) // => ['e', 'h', 'l', 'l', 'o']</code></pre>
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="stringify"><span class="type-signature"></span>stringify<span class="signature">(input)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
 
     
 
@@ -3042,7 +3792,7 @@ slice([1, 4, 5], {}, 0, -1) // => [1, 4]</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line153">line 153</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line155">line 155</a>
     </li></ul></dd>
     
 
@@ -3052,6 +3802,8 @@ slice([1, 4, 5], {}, 0, -1) // => [1, 4]</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -3089,6 +3841,8 @@ slice([1, 4, 5], {}, 0, -1) // => [1, 4]</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>stringify(4) // => '4'
@@ -3110,7 +3864,9 @@ stringify(function () {}) // =></code></pre>
 
     
 
+    
     <h4 class="name" id="sum"><span class="type-signature"></span>sum<span class="signature">(input)</span><span class="type-signature"> &rarr; {int|float}</span></h4>
+    
 
     
 
@@ -3210,7 +3966,7 @@ stringify(function () {}) // =></code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line75">line 75</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line77">line 77</a>
     </li></ul></dd>
     
 
@@ -3220,6 +3976,8 @@ stringify(function () {}) // =></code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -3260,6 +4018,8 @@ stringify(function () {}) // =></code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>sum(4) // => 0
@@ -3281,7 +4041,9 @@ sum(function () {}) // => 0</code></pre>
 
     
 
+    
     <h4 class="name" id="toArray"><span class="type-signature"></span>toArray<span class="signature">(input)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -3381,7 +4143,7 @@ sum(function () {}) // => 0</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line115">line 115</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line117">line 117</a>
     </li></ul></dd>
     
 
@@ -3391,6 +4153,8 @@ sum(function () {}) // => 0</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -3428,6 +4192,8 @@ sum(function () {}) // => 0</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>toArray(4) // => [4]
@@ -3449,7 +4215,9 @@ toArray(function () {}) // => [function () {}]</code></pre>
 
     
 
+    
     <h4 class="name" id="toBool"><span class="type-signature"></span>toBool<span class="signature">(input)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
 
     
 
@@ -3549,7 +4317,7 @@ toArray(function () {}) // => [function () {}]</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line93">line 93</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line95">line 95</a>
     </li></ul></dd>
     
 
@@ -3559,6 +4327,8 @@ toArray(function () {}) // => [function () {}]</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -3596,6 +4366,8 @@ toArray(function () {}) // => [function () {}]</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>toBool(4) // => true
@@ -3621,7 +4393,9 @@ toBool(-1.0) // => true</code></pre>
 
     
 
+    
     <h4 class="name" id="toFloat"><span class="type-signature"></span>toFloat<span class="signature">(input)</span><span class="type-signature"> &rarr; {float}</span></h4>
+    
 
     
 
@@ -3721,7 +4495,7 @@ toBool(-1.0) // => true</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line67">line 67</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line69">line 69</a>
     </li></ul></dd>
     
 
@@ -3731,6 +4505,8 @@ toBool(-1.0) // => true</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -3768,6 +4544,8 @@ toBool(-1.0) // => true</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>toFloat(4) // => 4
@@ -3789,7 +4567,9 @@ toFloat(function () {}) // => NaN</code></pre>
 
     
 
+    
     <h4 class="name" id="toInt"><span class="type-signature"></span>toInt<span class="signature">(input, object, radix<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {int}</span></h4>
+    
 
     
 
@@ -3963,7 +4743,7 @@ toFloat(function () {}) // => NaN</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line45">line 45</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line47">line 47</a>
     </li></ul></dd>
     
 
@@ -3973,6 +4753,8 @@ toFloat(function () {}) // => NaN</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -4010,6 +4792,8 @@ toFloat(function () {}) // => NaN</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>toInt(4) // => 4
@@ -4031,7 +4815,9 @@ toInt(function () {}) // => NaN</code></pre>
 
     
 
+    
     <h4 class="name" id="toObject"><span class="type-signature"></span>toObject<span class="signature">(input, object)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
 
     
 
@@ -4154,7 +4940,7 @@ toInt(function () {}) // => NaN</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line131">line 131</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line133">line 133</a>
     </li></ul></dd>
     
 
@@ -4164,6 +4950,8 @@ toInt(function () {}) // => NaN</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -4201,6 +4989,8 @@ toInt(function () {}) // => NaN</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>toObject(4) // => 4
@@ -4215,7 +5005,9 @@ toObject('{"answer":42}') // => {answer: 42}</code></pre>
 
     
 
+    
     <h4 class="name" id="toStr"><span class="type-signature"></span>toStr<span class="signature">(input)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
 
     
 
@@ -4315,7 +5107,7 @@ toObject('{"answer":42}') // => {answer: 42}</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line21">line 21</a>
+        <a href="convert.js.html">convert.js</a>, <a href="convert.js.html#line23">line 23</a>
     </li></ul></dd>
     
 
@@ -4325,6 +5117,8 @@ toObject('{"answer":42}') // => {answer: 42}</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -4362,6 +5156,8 @@ toObject('{"answer":42}') // => {answer: 42}</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>toStr(4) // => '4'
@@ -4383,7 +5179,9 @@ toStr(function () {}) // => 'function () {}'</code></pre>
 
     
 
+    
     <h4 class="name" id="unique"><span class="type-signature"></span>unique<span class="signature">(input)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
 
     
 
@@ -4483,7 +5281,7 @@ toStr(function () {}) // => 'function () {}'</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line53">line 53</a>
+        <a href="array.js.html">array.js</a>, <a href="array.js.html#line55">line 55</a>
     </li></ul></dd>
     
 
@@ -4493,6 +5291,8 @@ toStr(function () {}) // => 'function () {}'</code></pre>
 
     
 </dl>
+
+
 
 
 
@@ -4530,6 +5330,8 @@ toStr(function () {}) // => 'function () {}'</code></pre>
     
 
 
+
+
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>unique(4) // => []
@@ -4563,13 +5365,13 @@ unique([4, 3, 4, 2, [3]]) // => [4, 3, 2, [3]]</code></pre>
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#child">child</a></li><li><a href="global.html#compact">compact</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findWhere">findWhere</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#join">join</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#set">set</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#stringify">stringify</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#toArray">toArray</a></li><li><a href="global.html#toBool">toBool</a></li><li><a href="global.html#toFloat">toFloat</a></li><li><a href="global.html#toInt">toInt</a></li><li><a href="global.html#toObject">toObject</a></li><li><a href="global.html#toStr">toStr</a></li><li><a href="global.html#unique">unique</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#child">child</a></li><li><a href="global.html#compact">compact</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findWhere">findWhere</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#join">join</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#set">set</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#sort">sort</a></li><li><a href="global.html#stringify">stringify</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#toArray">toArray</a></li><li><a href="global.html#toBool">toBool</a></li><li><a href="global.html#toFloat">toFloat</a></li><li><a href="global.html#toInt">toInt</a></li><li><a href="global.html#toObject">toObject</a></li><li><a href="global.html#toStr">toStr</a></li><li><a href="global.html#unique">unique</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Sun Dec 25 2016 18:43:19 GMT+0800 (HKT)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 11:09:16 GMT+0200 (Central European Summer Time)
 </footer>
 
 <script> prettyPrint(); </script>
