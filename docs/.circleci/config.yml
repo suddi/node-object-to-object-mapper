@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:12
     steps:
       - run: status_code=$(curl --output /dev/null --head --silent --write-out '%{http_code}' https://suddi.github.io/node-object-to-object-mapper/)
-      - run: if [ $status_code != "200" ]; then exit 1; fi
+      - run: if [[ $status_code != "200" ]]; then exit 1; fi
 
 workflows:
   version: 2
