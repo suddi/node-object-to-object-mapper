@@ -5,9 +5,9 @@ jobs:
     docker:
       - image: circleci/node:12
     steps:
-      - run: status_code=$(curl --output /dev/null --head --silent --write-out '%{http_code}' https://suddi.github.io/node-object-to-object-mapper/)
-      - run: echo $status_code
-      - run: if [[ $status_code != "200" ]]; then exit 1; fi
+      - run: |
+          status_code=$(curl --output /dev/null --head --silent --write-out '%{http_code}' https://suddi.github.io/node-object-to-object-mapper/);
+          if [[ $status_code != "200" ]]; then exit 1; fi
 
 workflows:
   version: 2
