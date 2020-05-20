@@ -1,50 +1,18 @@
 version: 2
 
 jobs:
-  node8:
-    docker:
-      - image: circleci/node:8
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm test
-
-  node10:
-    docker:
-      - image: circleci/node:10
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm test
-
-  node12:
+  docs:
     docker:
       - image: circleci/node:12
     steps:
-      - checkout
-      - run: npm install
-      - run: npm test
-      - run: bash <(curl -s https://codecov.io/bash)
+      - run: status_code=$(curl --output /dev/null --head --silent --write-out '%{http_code}' https://suddi.github.io/node-object-to-object-mapper/)
+      - run: if [ $status_code != "200" ]; then exit 1; fi
 
 workflows:
   version: 2
-  build_and_test:
+  test:
     jobs:
-      - node8:
-          filters:
-            branches:
-              ignore:
-                - /^gh-pages$/
-      - node10:
-          filters:
-            branches:
-              ignore:
-                - /^gh-pages$/
-      - node12:
-          filters:
-            branches:
-              ignore:
-                - /^gh-pages$/
+      - docs:
 
 notify:
   webhooks:
