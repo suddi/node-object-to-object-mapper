@@ -34,7 +34,7 @@
     "coverage": "nyc mocha",
     "docs": "jsdoc -c ./jsdoc.json",
     "lint": "eslint .",
-    "publish-docs": "git subtree push --prefix docs --branch gh-pages",
+    "publish-docs": "git subtree split --prefix docs --branch gh-pages",
     "security-check": "npm audit --audit-level high || true",
     "test": "npm run lint && npm run security-check && npm run coverage",
     "snyk-protect": "snyk protect",
