@@ -41,7 +41,7 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "lodash": "^4.7.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "chai": "^4.2.0",
